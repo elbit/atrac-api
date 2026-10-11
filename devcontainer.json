@@ -1,0 +1,15 @@
+{
+  "name": "atrac-api (Sony encoder)",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": {
+      "label": "ATRAC API",
+      "onAutoForward": "silent",
+      "visibility": "public"
+    }
+  },
+  "remoteUser": "vscode"
+}
